@@ -13,6 +13,8 @@ export async function migrate(db) {
       name text primary key,
       applied_at timestamptz not null default now()
     );
+    alter table schema_migrations enable row level security;
+    revoke all on schema_migrations from public;
   `);
   const applied = new Set((await db.query('select name from schema_migrations')).map((r) => r.name));
   const dir = path.join(REPO_ROOT, 'supabase', 'migrations');

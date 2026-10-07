@@ -1,3 +1,3 @@
 # export
 
-Create a private exports directory. Run `npm run itinerary -- export --out=exports/new-backup.json`. Verify all nine record types. Keep a database backup too. Never publish customer records.
+Create a private exports directory. Run `npm run itinerary -- export --out=exports/new-backup.json`. Verify all eleven record types. Keep a database backup too. Never publish customer records.

@@ -92,6 +92,7 @@ try{
  ok((await run(db,['consultant-workload'])).some(r=>r.consultant==='Mia'&&Number(r.overdue_deposit_cents)===100000),'workload currency grouped');
  const exportFile=path.join(temp,'backup.json');const ex=await run(db,['export']);ok(TABLES.every(t=>Array.isArray(ex[t])),'every table exported');await run(db,['export','--out='+exportFile]);await rejects(()=>run(db,['export','--out='+exportFile]),/EEXIST/);
  const draft=await run(db,['draft-weekly']);ok(!draft.sent&&fs.readFileSync(draft.file,'utf8').includes('NZ101'),'real draft data');
+ ok((await db.query("select rowsecurity from pg_tables where schemaname='public' and tablename='schema_migrations'"))[0].rowsecurity,'migration tracking table denies unprivileged reads');
  const rls=await db.query("select count(*) n from pg_tables where schemaname='tours' and rowsecurity");ok(Number(rls[0].n)===TABLES.length,'all tables RLS');
  await db.exec('create role tours_test_reader');await db.exec('grant usage on schema tours to tours_test_reader');await db.exec('grant select on all tables in schema tours to tours_test_reader');await db.exec('set role tours_test_reader');ok((await db.query('select * from tours.bookings')).length===0,'no public data');ok((await db.query('select * from tours.booking_margins')).length===0,'views respect RLS');await db.exec('reset role');
  await db.close();db=null;
