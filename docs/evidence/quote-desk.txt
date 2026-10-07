@@ -1,0 +1,7 @@
+npm run itinerary -- quote-desk
+
+code   name                      currency  quote_expires  service_count  revenue_cents  cost_cents   commission_bps  commission_cents  margin_after_commission_cents  margin_after_commission_pct
+  -----  ------------------------  --------  -------------  -------------  -------------  -----------  --------------  ----------------  -----------------------------  ---------------------------
+  NZ101  Southern Lakes Discovery  NZD                      3              NZD 5190.00    NZD 4400.00  0               NZD 0.00          NZD 790.00                     15.2                       
+  NZ102  Southern Lakes Private    NZD       2026-10-05     1              NZD 300.00     NZD 240.00   0               NZD 0.00          NZD 60.00                      20.0                       
+  NZ103  Alpine Spring Group       NZD                      1              NZD 1200.00    NZD 960.00   0               NZD 0.00          NZD 240.00                     20.0

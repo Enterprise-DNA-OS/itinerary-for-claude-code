@@ -1,0 +1,42 @@
+[
+  [
+    "Which trips combine unconfirmed services, open tasks and overdue deposits?",
+    "departure-readiness"
+  ],
+  [
+    "What margin remains after each itinerary\u2019s agreed agency commission?",
+    "quote-desk"
+  ],
+  [
+    "Which consultant has the most open preparation work in each currency?",
+    "consultant-workload"
+  ],
+  [
+    "Which supplier bills are overdue after recorded payments?",
+    "supplier-bills"
+  ],
+  [
+    "Which supplier rate seasons need replacing before the next quote?",
+    "season-watch"
+  ],
+  [
+    "Which requested services face an approaching cancellation deadline?",
+    "cancellation-watch"
+  ],
+  [
+    "Which quotes have expired while the traveller has gone quiet?",
+    "quote-followup"
+  ],
+  [
+    "Which departures still lack named travellers?",
+    "manifest-gaps"
+  ],
+  [
+    "Which adventure supplier records lack registration evidence for the trip date?",
+    "compliance"
+  ],
+  [
+    "How do imported itinerary totals compare with services we have costed locally?",
+    "imported-summaries and margin-watch"
+  ]
+]

@@ -1,0 +1,6 @@
+npm run itinerary -- departure-readiness
+
+code   name                      travel_date  consultant  currency  status     awaiting_confirmation  open_tasks  unnamed_travellers  overdue_deposit_cents  terms_recorded
+  -----  ------------------------  -----------  ----------  --------  ---------  ---------------------  ----------  ------------------  ---------------------  --------------
+  NZ101  Southern Lakes Discovery  2026-10-12   Mia         NZD       confirmed  2                      1           10                  NZD 1000.00            false         
+  NZ103  Alpine Spring Group       2026-10-19   Mia         NZD       confirmed  0                      0           8                   NZD 0.00               true

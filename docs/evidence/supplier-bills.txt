@@ -1,0 +1,5 @@
+npm run itinerary -- supplier-bills
+
+supplier          booking  code        currency  amount_cents  paid_cents  outstanding_cents  due_on    
+  ----------------  -------  ----------  --------  ------------  ----------  -----------------  ----------
+  Southern Coaches  NZ101    BILL-COACH  NZD       NZD 400.00    NZD 100.00  NZD 300.00         2026-10-05
